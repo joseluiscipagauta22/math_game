@@ -1,2 +1,11 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+/* styles.scss */
+
+.shepherd-element {
+  border-radius: 12px;
+  background: #f8d135;
+  border: 2px solid #f4a261;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Comic Sans MS', sans-serif;
+}

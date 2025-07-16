@@ -24,6 +24,7 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import "@ionic/angular/css/display.css";
 
 /**
  * Ionic Dark Mode
@@ -35,3 +36,36 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* styles.scss */
+// @import '@theme/variables.scss';
+.shepherd-element {
+  position: fixed !important;
+  top: 25% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+
+.test {
+  height: 150px;
+  border-radius: 12px;
+  background: #f8d50dd8 !important;
+  border: 2px solid #f4a261 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2) !important;
+  font-family: 'Comic Sans MS', sans-serif !important;
+  // width: 400px !important;
+  // font-size: 100px !important;
+}
+
+.shepherd-element .shepherd-text {
+  font-size: 1.1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.shepherd-element .custom-tooltip {
+  // width: 100% !important;
+  // max-width: 80% !important;
+  // margin: 0 auto; /* Centra horizontalmente si no usas attachTo */
+}
+

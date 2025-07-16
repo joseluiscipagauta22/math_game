@@ -1,0 +1,47 @@
+<!-- <p>
+  dashboard works!
+</p> -->
+<ion-content style="display: flex; flex-direction: column; height: 100%;">
+  <h1 style="text-align: center;">Hola como estas ? </h1>
+  <h3 style="text-align: center;">Bienvenido a Papne, tu App para aprender las matamaticas</h3>
+  <ion-card style="--background: linear-gradient(to right, #7f2fb8d5, #d7b2fa);">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      <ion-button>Boton de prueba</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- @for (user of operaciones; track user.id) {
+      <ion-card style="--background: linear-gradient(to right, #7f2fb8d5, #d7b2fa);" [class]="user.nombre">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    } -->
+
+  <div style="background-color: aqua; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+    @for (user of operaciones; track user.id) {
+      <ion-card style="--background: linear-gradient(to right, #7f2fb8d5, #d7b2fa);" [class]="user.nombre">
+        <ion-card-header>
+          <ion-card-title>Card</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    }
+  </div>
+
+</ion-content>

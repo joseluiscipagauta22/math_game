@@ -1,0 +1,21 @@
+<div class="contenedor-grid">
+  <div class="item1"></div>
+  <div class="item2">
+    <ng-lottie class="miTest" [options]="mascotaAnimation"></ng-lottie>
+  </div>
+
+  <div class="item3">
+      @if(showAge()) {
+        <div class="ion-padding-start ion-padding-end" style="width: 60%;">
+          <ion-input label="Nombre" [counter]="true" maxlength="20"></ion-input>
+          <ion-button (click)="cerrarDialog()" style="width: 100%;">SIGUIENTE</ion-button>
+        </div>
+      }@else{
+        <div class="ion-padding-start ion-padding-end" style="width: 60%;">
+          <ion-button (click)="redirecTo()" style="width: 100%;">4 - 6</ion-button>
+          <ion-button (click)="redirecTo()" style="width: 100%;">7 - 9</ion-button>
+          <ion-button (click)="redirecTo()" style="width: 100%;">10 - 13</ion-button>
+        </div>
+      }
+  </div>
+</div>

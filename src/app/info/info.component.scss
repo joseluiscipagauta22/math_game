@@ -1,0 +1,28 @@
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.item1 {
+  grid-template-rows: 1;
+  overflow: hidden;
+  // background-color: aqua;
+}
+
+.item2 {
+  grid-template-rows: 2 / 3;
+  overflow: hidden;
+  // background-color: black;
+}
+
+.item3{
+  // background-color: blueviolet;
+  grid-template-rows: 3 / 4;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  align-items: center;
+}
